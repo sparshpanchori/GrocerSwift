@@ -1,0 +1,276 @@
+
+body {
+  background-color: #FEF5DF;
+}
+.parent-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+ 
+}
+
+
+.container {
+  width: 250px;
+  height: 300px;
+  position: relative;
+  background: url("product-images/oreo.png");
+  background-color: black;
+  background-size: cover;
+  cursor: pointer;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0 0 5px #000;
+  box-shadow: 0 0 5px #000;
+}
+.container1 {
+  width: 250px;
+  height: 300px;
+  position: relative;
+  background: url("product-images/hide&seek.png");
+  background-color: black;
+  background-size: cover;
+  cursor: pointer;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0 0 5px #000;
+  box-shadow: 0 0 5px #000;
+}
+
+.container2 {
+  width: 250px;
+  height: 300px;
+  position: relative;
+  background: url("product-images/sunfeast-farmlite.png");
+  background-color: black;
+  background-size: cover;
+  cursor: pointer;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0 0 5px #000;
+  box-shadow: 0 0 5px #000;
+}
+.container3 {
+  width: 250px;
+  height: 300px;
+  position: relative;
+  background: url("product-images/darkfantasy.webp");
+  background-color: black;
+  background-size: cover;
+  cursor: pointer;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0 0 5px #000;
+  box-shadow: 0 0 5px #000;
+}
+.container4 {
+  width: 250px;
+  height: 300px;
+  position: relative;
+  background: url("product-images/df-chocochip.png");
+  background-color: black;
+  background-size: cover;
+  cursor: pointer;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0 0 5px #000;
+  box-shadow: 0 0 5px #000;
+}
+.container5 {
+  width: 250px;
+  height: 300px;
+  position: relative;
+  background: url("product-images/biscoff.png");
+  background-color: black;
+  background-size: cover;
+  cursor: pointer;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0 0 5px #000;
+  box-shadow: 0 0 5px #000;
+}
+.container6 {
+  width: 250px;
+  height: 300px;
+  position: relative;
+  background: url("product-images/parleg.png");
+  background-color: black;
+  background-size: cover;
+  cursor: pointer;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0 0 5px #000;
+  box-shadow: 0 0 5px #000;
+}
+.container7 {
+  width: 250px;
+  height: 300px;
+  position: relative;
+  background: url("product-images/monaco.png");
+  background-color: black;
+  background-size: cover;
+  cursor: pointer;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0 0 5px #000;
+  box-shadow: 0 0 5px #000;
+}
+
+.container8 {
+  width: 250px;
+  height: 300px;
+  position: relative;
+  background: url("product-images/bourbon.png");
+  background-color: black;
+  background-size: cover;
+  cursor: pointer;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0 0 5px #000;
+  box-shadow: 0 0 5px #000;
+}
+.container9 {
+  width: 250px;
+  height: 300px;
+  position: relative;
+  background: url("product-images/jimjam.png");
+  background-color: black;
+  background-size: cover;
+  cursor: pointer;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0 0 5px #000;
+  box-shadow: 0 0 5px #000;
+}
+.container10 {
+  width: 250px;
+  height: 300px;
+  position: relative;
+  background: url("product-images/unibic_nut.png");
+  background-color: black;
+  background-size: cover;
+  cursor: pointer;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0 0 5px #000;
+  box-shadow: 0 0 5px #000;
+}
+.container11 {
+  width: 250px;
+  height: 300px;
+  position: relative;
+  background: url("product-images/peanutcookies.png");
+  background-color: black;
+  background-size: cover;
+  cursor: pointer;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0 0 5px #000;
+  box-shadow: 0 0 5px #000;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr 2fr 1fr;
+  background: rgba(77, 77, 77, .9);
+  color: #FEF5DF;
+  opacity: 0;
+  transition: all 0.5s;
+  font-family: 'Playfair Display', serif;
+}
+
+
+.items {
+  padding-left: 15px;
+  letter-spacing: 3px;
+}
+
+.head {
+  font-size: 30px;
+  line-height: 40px;
+  
+  transform: translateY(40px);
+  transition: all 0.7s;
+  hr {
+    display: block;
+    width: 0;
+    
+    border: none;
+    border-bottom: solid 2px #FEF5DF;
+    
+    position: absolute;
+    bottom: 0; left:20px;
+    
+    transition: all .5s;
+  }
+}
+
+.price {
+  font-size: 22px;
+  line-height: 10px;
+  font-weight: bold;  
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.7s;
+  .old {
+    text-decoration: line-through;
+    color: lighten(rgb(77, 77, 77),40%);
+  }
+}
+
+.cart {
+  font-size: 18px;
+  opacity: 0;
+  letter-spacing: 1px;
+  font-family: 'Lato', sans-serif;
+  transform: translateY(40px);
+  transition: all 0.7s;
+  i {
+    font-size: 16px;
+  }
+  span {
+    margin-left: 10px;
+  }
+}
+
+.container:hover .overlay {
+  opacity: 1;
+  & .head {
+    transform: translateY(0px);
+  }
+  
+  & hr {
+    width: 75px;
+    transition-delay: 0.4s;
+  }
+  
+  & .price {
+    transform: translateY(0px);
+    transition-delay: 0.3s;
+    opacity: 1;
+  }
+  
+  & .cart {
+    transform: translateY(0px);
+    transition-delay: 0.6s;
+    opacity: 1;
+  }
+}
+
+.container1:hover .overlay,.container2:hover .overlay,.container3:hover .overlay,
+.container4:hover .overlay,.container5:hover .overlay,.container6:hover .overlay ,
+.container7:hover .overlay ,.container8:hover .overlay ,.container9:hover .overlay,
+.container10:hover .overlay,.container11:hover .overlay    {
+  opacity: 1;
+  & .head {
+    transform: translateY(0px);
+  }
+  
+  & hr {
+    width: 75px;
+    transition-delay: 0.4s;
+  }
+  
+  & .price {
+    transform: translateY(0px);
+    transition-delay: 0.3s;
+    opacity: 1;
+  }
+  
+  & .cart {
+    transform: translateY(0px);
+    transition-delay: 0.6s;
+    opacity: 1;
+  }
+}
